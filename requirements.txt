@@ -6,3 +6,5 @@ cx-Oracle
 SQLAlchemy
 pandas
 pytest
+pytest-cov
+
