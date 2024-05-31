@@ -21,4 +21,14 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi  
       - name: Test with pytest  
         run: |  
-          pytest -v --cov
+        pytest -v --cov
+      - name: SSH and Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            git clone https://github.com/agrptec/sw-construction-class.git
+            cd repository/composetest
+            docker-compose up -d
