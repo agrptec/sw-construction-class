@@ -21,7 +21,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi  
       - name: Test with pytest  
         run: |  
-        pytest -v --cov
+          pytest -v --cov
       - name: SSH and Deploy
         uses: appleboy/ssh-action@master
         with:
