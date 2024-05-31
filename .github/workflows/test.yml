@@ -22,6 +22,15 @@ jobs:
       - name: Test with pytest  
         run: |  
           pytest -v --cov
+      - name: git push  
+        run: |  
+          git push
+
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: SSH and Deploy
         uses: appleboy/ssh-action@master
         with:
@@ -29,9 +38,9 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
+            sudo docker-compose down
             rm -rf sw-construction-class
             git clone https://github.com/agrptec/sw-construction-class.git
             cd sw-construction-class/composetest
             sudo docker-compose up -d
 
-            
