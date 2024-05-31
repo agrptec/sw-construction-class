@@ -29,6 +29,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
+            rm -rf sw-construction-class
             git clone https://github.com/agrptec/sw-construction-class.git
             cd sw-construction-class/composetest
-            docker-compose up -d
+            sudo docker-compose up -d
