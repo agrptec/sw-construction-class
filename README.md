@@ -30,3 +30,4 @@
 Huge shoutout goes to @DataSystemsGroupUT.
 
  - [data engineer course](https://github.com/DataSystemsGroupUT/dataeng.git)
+ - [Book] (https://drive.google.com/file/d/1hceH5Q7WgxAE17iXCn6iJpb23275tpkq/view?usp=share_link)
