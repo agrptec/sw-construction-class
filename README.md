@@ -30,4 +30,5 @@
 Huge shoutout goes to @DataSystemsGroupUT.
 
  - [data engineer course](https://github.com/DataSystemsGroupUT/dataeng.git)
- - [Book](https://drive.google.com/file/d/1hceH5Q7WgxAE17iXCn6iJpb23275tpkq/view?usp=share_link)
+ - [Software Engineer Book](https://drive.google.com/file/d/1hceH5Q7WgxAE17iXCn6iJpb23275tpkq/view?usp=share_link)
+ - [Microservices Book](https://drive.google.com/file/d/1mtJED6Z_P4ao_xaOtFCNth5dJYeHNVbj/view?usp=share_link)
